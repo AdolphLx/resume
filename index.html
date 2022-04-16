@@ -1,135 +1,762 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <link
-      rel="shortcut icon"
-      href="https://static-index-4gtuqm3bfa95c963-1304825656.tcloudbaseapp.com/official-website/favicon.svg"
-      mce_href="https://static-index-4gtuqm3bfa95c963-1304825656.tcloudbaseapp.com/official-website/favicon.svg"
-      type="image/x-icon"
-    />
-    <meta name="viewport" content="width=650,user-scalable=no" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-      crossorigin="anonymous"
-    />
-    <title>欢迎使用微信云托管</title>
-    <style>
-      .title-logo {
-        height: 80px;
-      }
-      .container {
-        margin-top: 100px;
-      }
-      .count-button {
-        width: 132px;
-        box-sizing: border-box;
-        margin: 16px 8px;
-      }
-      .count-number {
-        font-size: 18px;
-        font-weight: bolder;
-        margin: 0 8px;
-      }
-      .count-text {
-        width: 280px;
-        display: flex;
-        margin: 0 auto;
-        text-align: left;
-        height: 40px;
-        border: 1px solid rgba(0, 0, 0, 0.1);
-        border-radius: 4px;
-        line-height: 40px;
-        padding: 0 12px;
-      }
-      .quote {
-        font-size: 12px;
-      }
-      .qrcode {
-        height: 180px;
-        display: block;
-        margin: 0 auto;
-      }
-      .title {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-      }
-    </style>
-  </head>
+<!--[if IE 8 ]><html class="no-js oldie ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
 
-  <body>
-    <div class="container">
-      <div class="title">
-        <img
-          class="title-logo"
-          src="https://static-index-4gtuqm3bfa95c963-1304825656.tcloudbaseapp.com/official-website/favicon.svg"
-        />
-        <h1 style="display: inline; margin-bottom: 48px">欢迎使用微信云托管</h1>
-      </div>
-      <div style="text-align: center">
-        <p class="count-text">当前计数：<span class="count-number"></span></p>
-        <div
-          style="display: flex; justify-content: center; margin-bottom: 80px"
-        >
-          <a
-            class="btn btn-success btn-lg count-button"
-            style="background: #07c160; border: 0"
-            onclick="set('inc')"
-            >计数+1</a
-          >
-          <a
-            class="btn btn-outline-success btn-lg count-button"
-            style="background: rgba(0, 0, 0, 0.03); color: #07c160; border: 0"
-            onclick="set('clear')"
-            >清零</a
-          >
+<head>
+
+  <!--- basic page needs
+================================================== -->
+  <meta charset="utf-8">
+  <title>刘祥的简历</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- mobile specific metas
+================================================== -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <!-- CSS
+================================================== -->
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="//at.alicdn.com/t/font_3333210_6c1ze41jcem.css" />
+
+  <!-- script
+================================================== -->
+  <script src="js/modernizr.js"></script>
+  <script src="js/pace.min.js"></script>
+
+  <!-- favicons
+================================================== -->
+  <link rel="icon" type="image/png"
+    href="https://7072-prod-7gtr5bbte570ef60-1257711897.tcb.qcloud.la/img/WechatIMG130.jpeg">
+
+</head>
+
+<body id="top">
+  <input disabled="disabled" />
+  <!-- mode 
+================================================== -->
+  <div id="weixinMod">
+    <div class="weixinImg">
+      <img src="https://7072-prod-7gtr5bbte570ef60-1257711897.tcb.qcloud.la/img/WechatIMG133.jpeg">
+    </div>
+  </div>
+
+  <!-- intro section
+================================================== -->
+  <section id="intro">
+
+    <div class="intro-overlay"></div>
+
+    <div class="intro-content">
+      <div class="row">
+
+        <div class="col-twelve">
+
+          <!-- <h5>Hello, World.</h5> -->
+          <h1>刘祥的简历</h1>
+
+          <p class="intro-position">
+            <span>前端开发工程师</span>
+            <span>6年工作经验</span>
+          </p>
+
+          <a class="button stroke smoothscroll" href="#about" title="">了解更多 <i class="iconfont icon-jiantouxia"></i></a>
+
         </div>
-        <small
-          class="text-black-50"
-          style="display: flex; justify-content: center; margin-bottom: 16px"
-          >扫码加入微信云托管用户群</small
-        >
-        <img
-          class="qrcode middle"
-          src="https://qcloudimg.tencent-cloud.cn/raw/89b46988d3cd73d8a56e76a1b82bb377.png"
-        />
+
       </div>
     </div>
-  </body>
-  <script src="https://mat1.gtimg.com/www/asset/lib/jquery/jquery/jquery-1.11.1.min.js"></script>
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-    crossorigin="anonymous"
-  ></script>
-  <script>
-    init();
-    function init() {
-      $.ajax("/api/count", {
-        method: "get",
-      }).done(function (res) {
-        if (res && res.data !== undefined) {
-          $(".count-number").html(res.data);
-        }
-      });
-    }
-    function set(action) {
-      $.ajax("/api/count", {
-        method: "POST",
-        contentType: "application/json; charset=utf-8",
-        dataType: "json",
-        data: JSON.stringify({
-          action: action,
-        }),
-      }).done(function (res) {
-        if (res && res.data !== undefined) {
-          $(".count-number").html(res.data);
-        }
-      });
-    }
-  </script>
+
+  </section>
+
+
+  <!-- about section
+================================================== -->
+  <section id="about">
+
+    <div class="row section-intro">
+      <div class="col-twelve">
+
+        <!-- <h5>About</h5> -->
+        <h1>个人介绍</h1>
+
+        <div class="intro-info">
+
+          <img src="https://7072-prod-7gtr5bbte570ef60-1257711897.tcb.qcloud.la/img/WechatIMG130.jpeg"
+            alt="Profile Picture">
+
+          <p class="lead">刘祥，男，27岁，2011年开始学美术，2013-2016年就读武汉软件工程职业学院，艺术设计专业。大学期间因网页设计课程接触到前端开发，喜欢上了代码，大二开始自学前端。</p>
+        </div>
+
+      </div>
+    </div> <!-- /section-intro -->
+
+    <div class="row about-content">
+
+      <div class="col-six tab-full">
+
+        <h3>个人优势</h3>
+        <p>毕业开始从事前端工作，至今已经6年工作经验，涉及到到项目有各种类型，有管理后台、微信小程序、支付宝小程序、h5、多端混合。熟悉 w3c 标准，对表现与数据分离，web 语义化有一定理解，对互联网产品和 web
+          技术有强烈兴趣，有较好的学习能力和强烈的进取心，具有良好的沟通能力和团队合作精神，优秀的分析 问题和解决问题的能力，具有一定的软件工程意识，有美术功底,设计和前端架构经验。</p>
+        <ul class="info-list">
+          <li>
+            <strong>工作地点：</strong>
+            <span><i class="iconfont icon-weizhi"></i> 广东省广州市</span>
+          </li>
+          <li>
+            <strong>电话（点击拨打）:</strong>
+            <span><i class="iconfont icon-dianhua"></i> <a href="tel:13607254336">13607254336</a></span>
+          </li>
+          <li>
+            <strong>邮箱（点击复制）:</strong>
+            <span><i class="iconfont icon-youxiang"></i> <a href="javaScript:;"
+                id="youxiang">784056810@qq.com</a></span>
+          </li>
+          <li>
+            <strong>微信（点击添加）:</strong>
+            <span><i class="iconfont icon-weixin"></i> <a href="javaScript:;" id="weixin">liu784056810<a /></span>
+          </li>
+
+        </ul> <!-- /info-list -->
+
+      </div>
+
+      <div class="col-six tab-full">
+
+        <h3>技术积累</h3>
+        <p><strong>语言：</strong>javaScript、typeScript、html、css<br />
+          <strong>js框架：</strong>vue、react、angular、jquery<br />
+          <strong>ui框架：</strong>element-ui、vant-ui、and-design、vux-ui、easyui、ionic、bootstrap<br />
+          <strong>混合：</strong>uni-app、taro<br />
+          <strong>小程序：</strong>微信小程序、支付宝小程序、云开发<br />
+          <strong>测试：</strong>jest <strong>游戏：</strong>cocos<br />
+          <strong>设计：</strong>ps、ai、XMind、磨刀<br />
+          <strong>后端：</strong>nodejs、mongodb<br />
+        </p>
+        <ul class="skill-bars">
+          <li>
+            <div class="progress percent80"><span>80%</span></div>
+            <strong>javaScript</strong>
+          </li>
+          <li>
+            <div class="progress percent80"><span>80%</span></div>
+            <strong>vue</strong>
+          </li>
+          <li>
+            <div class="progress percent70"><span>70%</span></div>
+            <strong>react</strong>
+          </li>
+          <li>
+            <div class="progress percent70"><span>70%</span></div>
+            <strong>angular</strong>
+          </li>
+
+        </ul> <!-- /skill-bars -->
+
+      </div>
+
+    </div>
+
+  </section> <!-- /process-->
+
+
+  <!-- resume Section
+================================================== -->
+  <section id="resume" class="grey-section">
+
+    <!-- <div class="row section-intro">
+	<div class="col-twelve">
+
+		<h5>Resume</h5>
+		<h1>More of my credentials.</h1>
+
+		<p class="lead">Lorem ipsum Do commodo in proident enim in dolor cupidatat adipisicing dolore officia nisi aliqua incididunt Ut veniam lorem ipsum Consectetur ut in in eu do.</p>
+
+	</div>   		
+</div> 
+ -->
+    <div class="row resume-timeline">
+
+      <div class="col-twelve resume-header">
+
+        <h2>工作经历</h2>
+
+      </div> <!-- /resume-header -->
+
+      <div class="col-twelve">
+
+        <div class="timeline-wrap">
+
+          <div class="timeline-block">
+
+            <div class="timeline-ico">
+              <i class="iconfont icon-gongzuo"></i>
+            </div>
+
+            <div class="timeline-header">
+              <h3>旅行家数字科技（广州）有限公司</h3>
+              <p>2021.06-2022.04</p>
+            </div>
+
+            <div class="timeline-content">
+              <h4>前端架构师</h4>
+              <p>负责小程序 PC端后台前端页面 sdk 公用组建前端开发，jest接口自动化测试小程序e2e自动化测试 接口定义 前端业务架构整理 项目搭建 小程序发布与版本管理</p>
+            </div>
+
+          </div> <!-- /timeline-block -->
+
+          <div class="timeline-block">
+
+            <div class="timeline-ico">
+              <i class="iconfont icon-gongzuo"></i>
+            </div>
+
+            <div class="timeline-header">
+              <h3>深圳市华付信息技术有限公司</h3>
+              <p>2018.11-2021.06</p>
+            </div>
+
+            <div class="timeline-content">
+              <h4>前端开发工程师</h4>
+              <p>负责腾讯大粤网广汽丰田项目组，小程序 h5
+                web端后台前端开发，小程序版本管理发布。腾讯智慧医药项目组，管理后台前端开发。业务组，项目的需求整理，项目搭建，报价，周期评估，任务安排，客户对接，项目竞标，项目开发及ui设计把关。</p>
+            </div>
+
+          </div> <!-- /timeline-block -->
+
+          <div class="timeline-block">
+
+            <div class="timeline-ico">
+              <i class="iconfont icon-gongzuo"></i>
+            </div>
+
+            <div class="timeline-header">
+              <h3>广州勇往科技有限公司</h3>
+              <p>2016.09-2018.11</p>
+            </div>
+
+            <div class="timeline-content">
+              <h4>小程序前端开发</h4>
+              <p>负责小程序 ui 设计前端页面开发，接口对接与发布。</p>
+            </div>
+
+          </div> <!-- /timeline-block -->
+
+        </div> <!-- /timeline-wrap -->
+
+      </div> <!-- /col-twelve -->
+
+    </div> <!-- /resume-timeline -->
+
+    <div class="row resume-timeline">
+
+      <div class="col-twelve resume-header">
+
+        <h2>项目经历</h2>
+
+      </div> <!-- /resume-header -->
+
+      <div class="col-twelve">
+
+        <div class="timeline-wrap">
+
+          <div class="timeline-block">
+
+            <div class="timeline-ico">
+              <i class="iconfont icon-xiaochengxu"></i>
+            </div>
+
+            <div class="timeline-header">
+              <h3>旅游家精选微信小程序</h3>
+              <p>2021.06-2022.04</p>
+            </div>
+
+            <div class="timeline-content">
+              <!-- <h4>Design College</h4> -->
+              <p>该小程序主营旅游产品售卖平台，以私域流量运营，二级分销模式，该项目用微信小程序原生加vantui框架结合开发，另接入 小程序直播
+                腾讯tim，用户多端端客服回话，以一店一群人人都是店主的模式，自己一个群，下家一个群，可发送产品 订单 服务单 直播 文本 表情 位置 图片 视频 红包，来运营自己的店铺，项目主要负责sdk 组建 tim
+                直播 e2e测试 接口定义 云开发 前端页面开发。</p>
+            </div>
+
+          </div> <!-- /timeline-block -->
+
+
+          <div class="timeline-block">
+
+            <div class="timeline-ico">
+              <i class="iconfont icon-Web"></i>
+            </div>
+
+            <div class="timeline-header">
+              <h3>旅游家运营后台</h3>
+              <p>2021.11-2022.04</p>
+            </div>
+
+            <div class="timeline-content">
+              <!-- <h4>University of Life</h4> -->
+              <p>该项目用于平台供应商管理后台，用于平台的财务对账，平台数据展示，项目用vue加element搭建，接入echerts 用于数据大屏展示，项目主要负责sdk 组建 tim jest自动化测试 接口定义
+                以及页面开发。</p>
+            </div>
+
+          </div> <!-- /timeline-block -->
+
+          <div class="timeline-block">
+
+            <div class="timeline-ico">
+              <i class="iconfont icon-Web"></i>
+            </div>
+
+            <div class="timeline-header">
+              <h3>DT运营平台</h3>
+              <p>2021.06-2021.08</p>
+            </div>
+
+            <div class="timeline-content">
+              <!-- <h4>State Design University</h4> -->
+              <p>该项目用户管理境外贸易单管理、贸易宝app业务管理，主要业务为境外贸易，项目采用react全家桶+and-design+ts搭建，项目担任前端开发，主要负责结汇部分的前端开发。</p>
+            </div>
+
+          </div> <!-- /timeline-block -->
+
+          <div class="timeline-block">
+
+            <div class="timeline-ico">
+              <i class="iconfont icon-Web"></i>
+            </div>
+
+            <div class="timeline-header">
+              <h3>旅游家供应商后台</h3>
+              <p>2021.06-2022.04</p>
+            </div>
+
+            <div class="timeline-content">
+              <!-- <h4>State Design University</h4> -->
+              <p>该项目是提供给供应商管理商的品后台，用于管理旅行团 酒店 景点 门票 套餐的产品发布 上下架，工单审核 优惠卷发放等，项目用vue加element搭建，接入腾讯地图sdk 以及腾讯tim
+                用于后台产品地址选择和客服会话，项目主要负责sdk 组建 tim jest自动化测试 接口定义 前端页面开发。</p>
+            </div>
+
+          </div> <!-- /timeline-block -->
+
+          <div class="timeline-block">
+
+            <div class="timeline-ico">
+              <i class="iconfont icon-xiaochengxu"></i>
+            </div>
+
+            <div class="timeline-header">
+              <h3>腾讯智慧医药微信小程序</h3>
+              <p>2021.06-2022.04</p>
+            </div>
+
+            <div class="timeline-content">
+              <!-- <h4>State Design University</h4> -->
+              <p>
+                该项目分为医生端和患者两个端登录，社区活动的形式，对应端展示发布的信息和活动，医生可回答患者提出的问题，外部应用的合作，外部h5以webview的形式对接外部应用，会议邀请及记录查看。项目使用微信小程序原生搭建，小程序原生api组件化完成页面开发。
+              </p>
+            </div>
+
+          </div> <!-- /timeline-block -->
+
+          <div class="timeline-block">
+
+            <div class="timeline-ico">
+              <i class="iconfont icon-Web"></i>
+            </div>
+
+            <div class="timeline-header">
+              <h3>腾讯智慧医药后台管理平台</h3>
+              <p>2021.06-2022.04</p>
+            </div>
+
+            <div class="timeline-content">
+              <!-- <h4>State Design University</h4> -->
+              <p>该项目是和腾讯合作开发的项目，主要用于管理腾讯医药tesp微信小程序的文章、广告、会议、红包、用户、
+                授权、外部应用，以及公众号的消息企业微信的会话消息及敏感词的配置。项目使用react全家桶配合and-design ui框架搭建</p>
+            </div>
+
+          </div> <!-- /timeline-block -->
+
+          <div class="timeline-block">
+
+            <div class="timeline-ico">
+              <i class="iconfont icon-Web"></i>
+            </div>
+
+            <div class="timeline-header">
+              <h3>免疫之家后台管理系统</h3>
+              <p>2021.06-2022.04</p>
+            </div>
+
+            <div class="timeline-content">
+              <!-- <h4>State Design University</h4> -->
+              <p>该项目用于腾讯医药tesp微信小程序的患者及医生数据分析，人群、偏好、用药、患者进行数据分析展示，使用 vue 框架，以及 vue-router 构建单页面应用，项目采用 vuex
+                处理各组件间的通讯，axios 封装 http response 拦截器处理请求，使用element-ui 组件库中部分功能进行快速开发，通过 vue-cli
+                快速搭建开发环境。使用echarts封装图形插件，展示页面数据分析情况。</p>
+            </div>
+
+          </div> <!-- /timeline-block -->
+
+          <div class="timeline-block">
+
+            <div class="timeline-ico">
+              <i class="iconfont icon-Web"></i>
+            </div>
+
+            <div class="timeline-header">
+              <h3>广汽丰田取送车web端</h3>
+              <p>2021.06-2022.04</p>
+            </div>
+
+            <div class="timeline-content">
+              <!-- <h4>State Design University</h4> -->
+              <p>该项目用于广汽丰田取车业务和送车业务pc端和ipad下单及数据查看，同时兼任ipad端，同时嵌套与广汽丰田内部系统中使用，使用 vue 框架，以及 vue-router 构建单页面应用，项目采用 vuex
+                处理各组件间的通讯，axios 封装 http response 拦截器处理请求，使用element-ui 组件库中部分功能进行快速开发，通过 vue-cli
+                快速搭建开发环境。使用高德地图sdk异步加载的方式，渲染页面地图，进行路线规划及路线查看巡航。</p>
+            </div>
+
+          </div> <!-- /timeline-block -->
+
+          <div class="timeline-block">
+
+            <div class="timeline-ico">
+              <i class="iconfont icon-Web"></i>
+            </div>
+
+            <div class="timeline-header">
+              <h3>广汽丰田积分中心后台管理</h3>
+              <p>2021.06-2022.04</p>
+            </div>
+
+            <div class="timeline-content">
+              <!-- <h4>State Design University</h4> -->
+              <p>该项目用于管理多个系统的积分的积分情况数据展示，积分奖励配额白名单，使用 vue 框架，以及 vue-router 构建单页面应用，项目采用 vuex 处理各组件间的通讯，axios 封装 http
+                response 拦截器处理请求，使用element-ui 组件库中部分功能进行快速开发，通过 vue-cli 快速搭建开发环境。</p>
+            </div>
+
+          </div> <!-- /timeline-block -->
+
+          <div class="timeline-block">
+
+            <div class="timeline-ico">
+              <i class="iconfont icon-h5"></i>
+            </div>
+
+            <div class="timeline-header">
+              <h3>广汽丰田取送车 h5</h3>
+              <p>2021.06-2022.04</p>
+            </div>
+
+            <div class="timeline-content">
+              <!-- <h4>State Design University</h4> -->
+              <p>该项目用于广汽丰田取车业务和送车业务手机端下单及数据查看，多个外部小程序合作以webview嵌套在小程序中使用，使用 vue 框架，以及 vue-router 构建单页面应用，项目采用 vuex
+                处理各组件间的通讯，axios 封装 http response 拦截器处理请求，使用vant-ui组件库中部分功能进行快速开发，通过 vue-cli
+                快速搭建开发环境。使用高德地图sdk异步加载的方式，渲染页面地图，进行路线规划及路线查看巡航.</p>
+            </div>
+
+          </div> <!-- /timeline-block -->
+
+          <div class="timeline-block">
+
+            <div class="timeline-ico">
+              <i class="iconfont icon-xiaochengxu"></i>
+            </div>
+
+            <div class="timeline-header">
+              <h3>广汽丰田畅享荟小程序</h3>
+              <p>2020.01-2021.06</p>
+            </div>
+
+            <div class="timeline-content">
+              <!-- <h4>State Design University</h4> -->
+              <p>
+                该项目主要用于广汽丰田用户社区活动，内部活动发发布，合作公司活动的发布对接，内部销售直播，以对接充电线上线下活动，用户线下扫码充电，可在线上小程序领取积分和红包，内嵌套的积分商城模块，可用积分兑换礼品。使用uniapp构建多端，打包多端发布，外部小程序合作以webview嵌套在小程序中使用，充电支付模块对接北京电动生活外部小程序完成支付，采用即时通讯技术接入直播，聊天室的方式完成直播间聊天互动，引入百度地图sdk完成充电地图站点显示及路线查看规划。接入腾讯移动数据分析，实时监控小程序数据情况。
+              </p>
+            </div>
+
+          </div> <!-- /timeline-block -->
+
+          <div class="timeline-block">
+
+            <div class="timeline-ico">
+              <i class="iconfont icon-xiaochengxu"></i>
+            </div>
+
+            <div class="timeline-header">
+              <h3>微信小程序共享电源</h3>
+              <p>2019.06-2020.01</p>
+            </div>
+
+            <div class="timeline-content">
+              <!-- <h4>State Design University</h4> -->
+              <p>
+                该项目主要用于充电桩充电，可扫码或输入编号开始充电，充电计费方式分为多种，有功率计费，时间计费，套餐计费，包月，包年，次数，支付方式分为余额、支付宝、微信，平台定期会发布活动，领取红包，红包可在余额支付是这块，红包分为现金和折扣。项目使用微信小程序原生搭建，小程序原生api组件化完成页面开发。
+              </p>
+            </div>
+
+          </div> <!-- /timeline-block -->
+
+          <div class="timeline-block">
+
+            <div class="timeline-ico">
+              <i class="iconfont icon-xiaochengxu"></i>
+            </div>
+
+            <div class="timeline-header">
+              <h3>微信小程序会议室预约系统</h3>
+              <p>2019.11-2019.12</p>
+            </div>
+
+            <div class="timeline-content">
+              <!-- <h4>State Design University</h4> -->
+              <p>
+                该项目又我自己提示想法设计完成的，主要公司内部会议室预约及查看，员工通过姓名工号登录，可提前预约会议室使用，内部员工提前录入，预约时可以选择参会员工，预约成功后将以消息推送的形式通知到每一个参会人员手机，这样既方便了会议室被占用，又方便了忘记或漏通知到人，还有生成工牌功能，新入职员工，可直接在小程序里上传照片填写信息，生成工牌，后台导出工牌数据图片打印发放。项目使用微信小程序原生搭建，小程序原生api组件化完成页面开发。canvas画布生成工牌图片。
+              </p>
+            </div>
+
+          </div> <!-- /timeline-block -->
+
+          <div class="timeline-block">
+
+            <div class="timeline-ico">
+              <i class="iconfont icon-Web"></i>
+            </div>
+
+            <div class="timeline-header">
+              <h3>共享电源运营平台</h3>
+              <p>2019.08-2019.11</p>
+            </div>
+
+            <div class="timeline-content">
+              <!-- <h4>State Design University</h4> -->
+              <p>该项目用于小程序和app用户数据分析和展示，商务对账，政企监管政企监管、合作商、自营点、充电点的配置，使用 vue 框架，以及 vue-router 构建单页面应用，项目采用 vuex
+                处理各组件间的通讯，axios 封装 http response 拦截器处理请求，使用element-ui 组件库中部分功能进行快速开发，通过 vue-cli 快速搭建开发环境。</p>
+            </div>
+
+          </div> <!-- /timeline-block -->
+
+          <div class="timeline-block">
+
+            <div class="timeline-ico">
+              <i class="iconfont icon-xiaochengxu"></i>
+            </div>
+
+            <div class="timeline-header">
+              <h3>支付宝小程序共享电源</h3>
+              <p>2019.06-2020.01</p>
+            </div>
+
+            <div class="timeline-content">
+              <!-- <h4>State Design University</h4> -->
+              <p>
+                该项目主要用于充电桩充电，可扫码或输入编号开始充电，充电计费方式分为多种，有功率计费，时间计费，套餐计费，包月，包年，次数，支付方式分为余额、支付宝、微信，平台定期会发布活动，领取红包，红包可在余额支付是这块，红包分为现金和折扣。项目使用支付宝小程序原生搭建，小程序原生api组件化完成页面开发。
+              </p>
+            </div>
+
+          </div> <!-- /timeline-block -->
+
+          <div class="timeline-block">
+
+            <div class="timeline-ico">
+              <i class="iconfont icon-xiaochengxu"></i>
+            </div>
+
+            <div class="timeline-header">
+              <h3>微信小程序共享电源换电</h3>
+              <p>2019.01-2019.06</p>
+            </div>
+
+            <div class="timeline-content">
+              <!-- <h4>State Design University</h4> -->
+              <p>该小程序用于小程序电池更换，用户可以通过小程序绑定电池，扫码开启充电柜，替换电池用，减除了等待充电时间，项目使用微信小程序原生搭建，小程序原生api组件化完成页面开发。</p>
+            </div>
+
+          </div> <!-- /timeline-block -->
+
+          <div class="timeline-block">
+
+            <div class="timeline-ico">
+              <i class="iconfont icon-Web"></i>
+            </div>
+
+            <div class="timeline-header">
+              <h3>红酒商城后台管理系统</h3>
+              <p>2018.11-2019.01</p>
+            </div>
+
+            <div class="timeline-content">
+              <!-- <h4>State Design University</h4> -->
+              <p>用于管理小程序端，货物的上下架商品，商品信息和活动调整和展示，小程序运营数据分析，使用 vue 框架，以及 vue-router 构建单页面应用，项目采用 vuex 处理各组件间的通讯，axios 封装
+                http response 拦截器处理请求，使用element-ui 组件库中部分功能进行快速开发，通过 vue-cli 快速搭建开发环境。</p>
+            </div>
+
+          </div> <!-- /timeline-block -->
+
+          <div class="timeline-block">
+
+            <div class="timeline-ico">
+              <i class="iconfont icon-xiaochengxu"></i>
+            </div>
+
+            <div class="timeline-header">
+              <h3>微信小程序拼团红酒商城</h3>
+              <p>2018.11-2019.01</p>
+            </div>
+
+            <div class="timeline-content">
+              <!-- <h4>State Design University</h4> -->
+              <p>该项目是为老板自己酒庄做的，项目从原型到设计到开发都又我独立完成，项目主要用于酒庄活动发布及售卖，
+                可以拼团购买，项目使用微信小程序原生搭建，小程序原生api组件化完成页面开发。</p>
+            </div>
+
+          </div> <!-- /timeline-block -->
+
+          <div class="timeline-block">
+
+            <div class="timeline-ico">
+              <i class="iconfont icon-xiaochengxu"></i>
+            </div>
+
+            <div class="timeline-header">
+              <h3>微信小程序-猜歌达人</h3>
+              <p>2017.04-2018.11</p>
+            </div>
+
+            <div class="timeline-content">
+              <!-- <h4>State Design University</h4> -->
+              <p>
+                项目为小程序开发小游戏模式，听歌才歌名，匹配对战猜歌名，主以吸收流量为主，上线一个月就破百万，累计用户破千万，项目使用微信小程序原生搭建，小程序原生api组件化完成页面开发。使用websocket完成匹配对战。
+              </p>
+            </div>
+
+          </div> <!-- /timeline-block -->
+
+          <div class="timeline-block">
+
+            <div class="timeline-ico">
+              <i class="iconfont icon-xiaochengxu"></i>
+            </div>
+
+            <div class="timeline-header">
+              <h3>微信小程序-猜图达人</h3>
+              <p>2017.04-2018.11</p>
+            </div>
+
+            <div class="timeline-content">
+              <!-- <h4>State Design University</h4> -->
+              <p>项目为小程序开发小游戏模式，看图猜人或物，匹配对战猜图，主以吸收流量为主，累计用户破千万，项目使用微信小程序原生搭建，小程序原生api组件化完成页面开发。</p>
+            </div>
+
+          </div> <!-- /timeline-block -->
+
+          <div class="timeline-block">
+
+            <div class="timeline-ico">
+              <i class="iconfont icon-xiaochengxu"></i>
+            </div>
+
+            <div class="timeline-header">
+              <h3>微信小程序-挑战普通话</h3>
+              <p>2017.07-2018.11</p>
+            </div>
+
+            <div class="timeline-content">
+              <!-- <h4>State Design University</h4> -->
+              <p>
+                项目为小程序开发小游戏模式，项目接入讯飞语音做声音对比评分，后台每天配置三个口令，通过小程序长按读出口令内容，音频上传匹配评分，80分以上为调整成功，可活动红包奖励，红包奖励可直接体现至微信零钱，项目使用微信小程序原生搭建，小程序原生api组件化完成页面开发。
+              </p>
+            </div>
+
+          </div> <!-- /timeline-block -->
+
+          <div class="timeline-block">
+
+            <div class="timeline-ico">
+              <i class="iconfont icon-xiaochengxu"></i>
+            </div>
+
+            <div class="timeline-header">
+              <h3>微信小程序-玩个包</h3>
+              <p>2017.07-2017.12</p>
+            </div>
+
+            <div class="timeline-content">
+              <!-- <h4>State Design University</h4> -->
+              <p>项目为小程序开发小游戏模式，主要用于节假日的趣味红包发放，可自定义发放口令、音频、答题红包，红包奖励可直接体现至微信零钱，项目使用微信小程序原生搭建，小程序原生api组件化完成页面开发。</p>
+            </div>
+
+          </div> <!-- /timeline-block -->
+
+          <div class="timeline-block">
+
+            <div class="timeline-ico">
+              <i class="iconfont icon-xiaochengxu"></i>
+            </div>
+
+            <div class="timeline-header">
+              <h3>微信小程序-闪拍会</h3>
+              <p>2017.04-2017.7</p>
+            </div>
+
+            <div class="timeline-content">
+              <!-- <h4>State Design University</h4> -->
+              <p>项目至于公司其他小程序中，用户引流，合作带货，项目是商城类小程序，采用平多多砍价模式，与其他小程序流量互通，项目使用微信小程序原生搭建，小程序原生api组件化完成页面开发。</p>
+            </div>
+
+          </div> <!-- /timeline-block -->
+
+        </div> <!-- /timeline-wrap -->
+
+      </div> <!-- /col-twelve -->
+
+    </div> <!-- /resume-timeline -->
+
+  </section> <!-- /features -->
+
+  <!-- services Section
+================================================== -->
+  <section id="services">
+
+    <div class="overlay"></div>
+
+    <div class="row section-intro">
+      <div class="col-twelve">
+
+        <!-- <h5>Services</h5> -->
+        <h1>兴趣爱好</h1>
+
+        <p class="lead">一个桥代码的设计师，平时节假日喜欢和家人出去旅游，看些技术书籍，画画。可能和大家眼中的程序员不太一样，头发尚且还行，不穿格子衬衫，性格外向，一个快奔三的中年小伙。</p>
+        <a class="button" href="tel:13607254336">立即沟通</a>
+      </div>
+    </div> <!-- /section-intro -->
+
+
+  </section> <!-- /services -->
+
+
+  <!-- stats Section
+================================================== -->
+
+  <!-- footer
+================================================== -->
+
+  <div id="go-top">
+    <a class="smoothscroll" href="#top">
+      <i class="iconfont icon-jiantou_xiangshang_o"></i>
+    </a>
+  </div>
+
+  <!-- Java Script
+================================================== -->
+  <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+
 </html>
