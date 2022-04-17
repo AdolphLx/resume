@@ -30,7 +30,7 @@ app.get("/api/count", async (req, res) => {
   });
 });
 
-const port = process.env.PORT || 8080;
+const port = process.env.PORT || 80;
 
 async function bootstrap () {
   // await initDB();
