@@ -2,7 +2,7 @@ const path = require("path");
 const express = require("express");
 const cors = require("cors");
 const morgan = require("morgan");
-// const { init: initDB, Counter } = require("./db");
+const { init: initDB, Counter } = require("./db");
 
 const logger = morgan("tiny");
 
@@ -23,7 +23,7 @@ app.get("/", async (req, res) => {
 
 // 获取计数
 app.get("/api/count", async (req, res) => {
-  // const result = await Counter.count();
+  const result = await Counter.count();
   res.send({
     code: 0,
     data: [],
