@@ -36,8 +36,8 @@ const port = process.env.PORT || 80;
 
 async function bootstrap () {
   // await initDB();
-  app.use(bodyParser.urlencoded({ extended: false }));//处理表单入参
-  app.use(bodyParser.json({ extended: false }));//处理json入参
+  // app.use(bodyParser.urlencoded({ extended: false }));//处理表单入参
+  // app.use(bodyParser.json({ extended: false }));//处理json入参
   // app.use(await initControllers());
   app.listen(port, () => {
     console.log("启动成功", port);
