@@ -2,7 +2,9 @@ const path = require("path");
 const express = require("express");
 const cors = require("cors");
 const morgan = require("morgan");
+const bodyParser = require('body-parser');
 // const { init: initDB, Counter } = require("./db");
+const initControllers = require('./controller');
 
 const logger = morgan("tiny");
 
@@ -34,6 +36,9 @@ const port = process.env.PORT || 80;
 
 async function bootstrap () {
   // await initDB();
+  app.use(bodyParser.urlencoded({ extended: false }));//处理表单入参
+  app.use(bodyParser.json({ extended: false }));//处理json入参
+  // app.use(await initControllers());
   app.listen(port, () => {
     console.log("启动成功", port);
   });
